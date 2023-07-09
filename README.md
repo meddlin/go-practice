@@ -1,0 +1,1 @@
+A collection of practicing exercises I walked through while learning Go.
