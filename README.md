@@ -65,3 +65,4 @@ func init() {
 ```
 
 - Exercise: [https://go.dev/doc/tutorial/random-greeting](https://go.dev/doc/tutorial/random-greeting)
+- StackOverflow post: [https://stackoverflow.com/questions/12321133/how-to-properly-seed-random-number-generator](https://stackoverflow.com/questions/12321133/how-to-properly-seed-random-number-generator)
