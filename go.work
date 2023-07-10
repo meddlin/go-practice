@@ -1,0 +1,7 @@
+go 1.19
+
+use (
+	./ex2/greetings
+	./ex2/hello
+	./example
+)
