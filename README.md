@@ -9,9 +9,13 @@ A collection of practicing exercises I walked through while learning Go.
 
 ## Notes
 
+### Tutorial Used for Exercises 
+
 For the exercises I'm walking through, it comes from here the...
 
 Go Tutorial: [https://go.dev/doc/tutorial/getting-started](https://go.dev/doc/tutorial/getting-started)
+
+### Directories and Configuring Modules
 
 Organizing work for this repo is deisgned to be "one exercise per directory". However, this means we need to configure this to be "one module per directory". This effectively means we have a single repo with multiple modules. *To work with multiple modules, we need to make use of a Go workspace.*
 - [https://github.com/golang/tools/blob/master/gopls/doc/workspace.md](https://github.com/golang/tools/blob/master/gopls/doc/workspace.md)
@@ -39,3 +43,25 @@ use (
 	./example
 )
 ```
+
+
+## Language Notes
+
+### Slices
+
+- Go slices: [https://go.dev/blog/slices-intro](https://go.dev/blog/slices-intro)
+
+
+### Seeding the random package
+
+It's mentioned, but not well documented on the "random greeting" exercise, *you have to seed the random number generator* before it will return random numbers.
+
+You can seed it in the `init()` function of a module like below. **And** every module has an inherit `init()` function that is called when the code executes. If we specify it, then we can setup variables, etc. before everything else runs--*a great place to set a randomizer seed*.
+
+```go
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
+```
+
+- Exercise: [https://go.dev/doc/tutorial/random-greeting](https://go.dev/doc/tutorial/random-greeting)
