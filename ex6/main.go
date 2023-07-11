@@ -15,6 +15,8 @@ func main() {
 	}
 	defer closeFile(f2) // <- this will be executed at the end of the enclosing function
 	// DoSomething(f, f2)
+
+	DoSeekerStuff(f2)
 	DoSomething(f2)
 }
 
@@ -24,6 +26,16 @@ func main() {
 
 func DoSomething(source io.Reader) {
 	fmt.Print("Copying from source to destination...")
+	io.Copy(os.Stdout, source)
+}
+
+/*
+ *
+ * ReadSeeker combines the Reader and Seeker interfaces
+ * - https://golang.hotexamples.com/examples/io/ReadSeeker/Seek/golang-readseeker-seek-method-examples.html
+ */
+func DoSeekerStuff(source io.ReadSeeker) {
+	source.Seek(5, io.SeekStart)
 	io.Copy(os.Stdout, source)
 }
 
