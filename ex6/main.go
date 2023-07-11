@@ -39,6 +39,10 @@ func DoSeekerStuff(source io.ReadSeeker) {
 	io.Copy(os.Stdout, source)
 }
 
+/*
+ * This function comes from here:
+ * https://stackoverflow.com/questions/20602131/io-writeseeker-and-io-readseeker-from-byte-or-file
+ */
 func closeFile(f *os.File) {
 	fmt.Println("closing")
 	err := f.Close()

@@ -12,6 +12,8 @@ function.
 
 - Ref: [https://gobyexample.com/defer](https://gobyexample.com/defer)
 
+- Defer example: [https://stackoverflow.com/questions/20602131/io-writeseeker-and-io-readseeker-from-byte-or-file](https://stackoverflow.com/questions/20602131/io-writeseeker-and-io-readseeker-from-byte-or-file)
+
 
 ## io.ReadSeeker
 
