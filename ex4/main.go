@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+/*
+ * Docs - https://pkg.go.dev/flag
+ */
+
 var myFlag = flag.String("myFlag", "default", "myFlag description")
 
 func main() {
