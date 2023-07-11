@@ -1,5 +1,7 @@
 # Using the io package
 
+This example has a *slightly* more advanced way to open and read parts of a file, using a ReadSeeker
+and making use of `defer` to close the file once we're done with it.
 
 ## Defer
 
