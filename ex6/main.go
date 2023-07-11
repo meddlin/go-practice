@@ -13,7 +13,7 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	defer f2.Close()
+	defer closeFile(f2) // <- this will be executed at the end of the enclosing function
 	// DoSomething(f, f2)
 	DoSomething(f2)
 }
