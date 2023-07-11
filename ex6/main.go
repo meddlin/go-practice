@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println("EX5 - Context")
+	fmt.Println("EX6 - Making use of io package")
 }
