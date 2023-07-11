@@ -6,6 +6,11 @@ import (
 	"os"
 )
 
+/*
+ * Go by Example - Reading Files
+ * https://gobyexample.com/reading-files
+ */
+
 func check(e error) {
 	if e != nil {
 		panic(e)
