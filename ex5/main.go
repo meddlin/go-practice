@@ -16,6 +16,7 @@ func printMessage(ch chan string) {
 
 func main() {
 	fmt.Println("EX5 - Context")
+	// TODO - Need to finish tying in gorutines and channels into contexts
 
 	// Let's make a channel
 	ch := make(chan string)
