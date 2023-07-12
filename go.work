@@ -9,4 +9,5 @@ use (
 	./ex2/greetings
 	./ex2/hello
 	./example
+	./topic-reflection
 )
