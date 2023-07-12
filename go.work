@@ -1,8 +1,16 @@
 go 1.19
 
 use (
+	./ex7
+	./ex6
+	./ex5
+	./ex4
 	./ex3
 	./ex2/greetings
 	./ex2/hello
 	./example
+	./topic-reflection
+	./topic-pointers
+	./topic-type-conversions
+	./topic-maps
 )
