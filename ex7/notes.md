@@ -9,3 +9,7 @@ Two key points:
 
 - `range` on arrays & slices provides the index and value
 - `range` on map iterates over key, value pairs
+
+### Further Reading
+
+Range over channels: [https://gobyexample.com/range-over-channels](https://gobyexample.com/range-over-channels)

@@ -10,4 +10,7 @@ use (
 	./ex2/hello
 	./example
 	./topic-reflection
+	./topic-pointers
+	./topic-type-conversions
+	./topic-maps
 )

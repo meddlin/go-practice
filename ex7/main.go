@@ -18,4 +18,7 @@ func main() {
 	for k, v := range kvs {
 		fmt.Printf("%s -> %s\n", k, v)
 	}
+
+	// TODO - Write an example showing range over channels
+	// Using this example: https://gobyexample.com/range-over-channels
 }
