@@ -13,4 +13,6 @@ use (
 	./topic-pointers
 	./topic-type-conversions
 	./topic-maps
+	./arrays
+	./slices
 )
