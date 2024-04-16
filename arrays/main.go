@@ -23,6 +23,13 @@ func main() {
 	fmt.Println("** looping over an array... **")
 
 	for i := 0; i < len(primes); i++ {
-		fmt.Println(primes[i])
+		fmt.Printf("%d", primes[i])
+	}
+
+	/* Loop with 'range' */
+	fmt.Println()
+	fmt.Println("** loop over array using 'range'... **")
+	for _, num := range primes {
+		fmt.Println(num)
 	}
 }
