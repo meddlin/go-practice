@@ -15,4 +15,5 @@ use (
 	./topic-maps
 	./arrays
 	./slices
+	./stack
 )
