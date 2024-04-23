@@ -16,4 +16,5 @@ use (
 	./arrays
 	./slices
 	./stack
+	./dynamic-array
 )
